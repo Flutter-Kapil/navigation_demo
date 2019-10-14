@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: LoginPage(),
-      theme: ThemeData.dark(),
-    )
-  );
+  runApp(MaterialApp(
+    home: LoginPage(),
+    theme: ThemeData.dark(),
+  ));
 }
 // TASK - Create navigation paths and screens as shown in the video using namedParameters
 // LoginPage - First Page
@@ -18,14 +16,16 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Navigation')),
+      appBar: AppBar(
+        title: Text('Login'),
+        centerTitle: true,
+      ),
       body: Center(
         child: RaisedButton(
           child: Text('Go to Home'),
-          onPressed: (){},
+          onPressed: () {},
         ),
       ),
     );
   }
 }
-
