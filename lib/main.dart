@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_demo/home.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -23,7 +24,10 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           child: Text('Go to Home'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
+          },
         ),
       ),
     );
